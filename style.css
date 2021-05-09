@@ -22,14 +22,14 @@ body{
 .title01 p{
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.2vmin;
     position: absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50% ,-50%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    letter-spacing:20px;
+    letter-spacing:0.4em;
     color: #777;
 }
 
@@ -41,7 +41,7 @@ body{
 
 .right-box01{
     margin-right: 30px;
-    position: relative;
+/*    position: relative;*/
     width: 45%;
     height: 500px;
     float: right;
@@ -49,7 +49,7 @@ body{
 
 .right-box22{
     z-index: 1;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background: #EEF2F7;
@@ -59,19 +59,41 @@ body{
 }
 
 .right-box22 p{
+/*    margin: auto 0;*/
     float: left;
-    margin: 15px;
-    font-size: 20px;
+    width: 50%;
+/*    margin-top: 25px;*/
+/*     margin-bottom: 25px;*/
+    font-size: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     letter-spacing: 3px;
-    line-height: 120px;
+    line-height: 0px;
     color: #585858;
+    
+/*    margin: auto;*/
+/*    text-align: center;*/
+/*    line-height: 50%;*/
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  
+    
+}
+
+.naka{
+    width: 100%;
+/*    height: 100%;*/
+    position: absolute;
+     top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .color-boxs{
-    margin: 10px;
+    margin: 30px;
     overflow: hidden;
+    position: relative;
 }
 
 .color-box{
@@ -81,9 +103,17 @@ body{
      box-shadow: 4px 4px 10px #B2BCCA,
         -4px -4px 10px #fffffa;
 /*    margin: 25px;*/
-    width: 120px;
-    height: 120px;
-    border-radius: 30px;
+    width: 40%;;
+/*    padding-top: 40%;*/
+    max-width: 100px;
+/*    height: 8vw;*/
+    border-radius: 25%;
+}
+
+.inner{
+    width: 0px;
+    height: 0px;
+    padding-bottom: 100%;
 }
 
 .boxbox01{
@@ -160,16 +190,17 @@ body{
 
 .left-box02 h1{
     color: #777;
-    font-size: 25px;
+    font-size: 2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    letter-spacing:30px;
+    letter-spacing:1em;
+    text-indent: 1em;
     text-align: center;
     line-height: 80px;
 }
 
 .left-box11 p{
-    font-size: 20px;
+    font-size: 1.2vmin;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -177,7 +208,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
-    line-height: 50px;
+    line-height: 4em;
     color: #585858;
     width: 75%;
 }
@@ -237,12 +268,14 @@ body{
 
 .ttt p{
     color: #777;
-    font-size: 25px;
+    font-size: 2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    letter-spacing: 30px;
+    letter-spacing: 1em;
+    text-indent: 1em;
     text-align: center;
     line-height: 80px;
+    
 }
 
 .box02-text01 p{
@@ -254,14 +287,15 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
-    line-height: 50px;
+    line-height: 4em;
     color: #585858;
     width: 75%;
+    font-size: 1.2vmin
 }
 
 .header-box01{
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     height: 50px;
     background: #EEF2F7;
     border-radius: 25px;
@@ -274,7 +308,7 @@ nav{
 
 ul{
     padding: 20px 20px;
-    width: 1000px;
+    width: 50%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -293,6 +327,7 @@ nav a{
     text-align: center;
     letter-spacing:10px;
     line-height: 50px;
+    font-size: 1.5vmin;
 }
 
 .box03{
@@ -343,13 +378,13 @@ nav a{
     top: 70%;
     left: 50%;
     transform:translate(-50% ,-50%);
-    font-size: 15px;
+    font-size: 1.2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 50px;
+    letter-spacing: 3px;
+    line-height: 4em;
     color: #585858;
-    width: 75%;
+/*    width: 100%;*/
 }
 
 .box03-right-box02 p{
@@ -357,11 +392,11 @@ nav a{
     top: 70%;
     left: 50%;
     transform:translate(-50% ,-50%);
-    font-size: 15px;
+    font-size: 1.2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
-    line-height: 50px;
+    line-height: 4em;
     color: #585858;
     width: 75%;
 }
@@ -372,8 +407,9 @@ nav a{
     transform:translate(-50% ,0%);
     z-index: 2;
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 75%;
+/*    height: 300px;*/
+    padding-top: 75%;
     border-radius: 50%;
     box-shadow: 8px 8px 10px #B2BCCA,
         -8px -8px 10px #fffffa;
@@ -439,12 +475,13 @@ nav a{
     text-align: center;
     width: 100%;
     color: #777;
-    font-size: 25px;
+    font-size: 2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    letter-spacing: 30px;
+    letter-spacing: 1em;
     text-align: center;
     line-height: 80px;
+    text-indent: 1em;
 }
 
 .left-box09{
@@ -477,11 +514,11 @@ nav a{
     top: 50%;
     left: 50%;
     transform:translate(-50% ,-50%);
-    font-size: 15px;
+    font-size: 1.2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 50px;
+    letter-spacing: 3px;
+    line-height: 4em;
     color: #585858;
     height: 75%;
 }
@@ -502,10 +539,10 @@ nav a{
     float: left;
     overflow: hidden;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: #FFF4F3;
-    border-radius: 70px;
+    border-radius: 50px;
     box-shadow: 8px 8px 10px #B2BCCA, -8px -8px 10px #fffffa;
 }
 
@@ -517,30 +554,30 @@ nav a{
 }
 
 .test02{
-    width: 1000px;
-    height: 1000px;
+    width: 500%;
+    height: 500%;
     border-radius: 500px;
     background: #FFECE9;
     border-radius: 500px;
 }
 
 .test03{
-    width: 950px;
-    height: 600px;
+    width: 475%;
+    height: 300%;
     border-radius: 500px;
     background: #FFE3DF;
 }
 
 .test04{
-    width: 650px;
-    height: 450px;
+    width: 325%;
+    height: 225%;
     background: #FDDFDB;
     border-radius: 500px;
 }
 
 .test05{
-    width: 400px;
-    height: 400px;
+    width: 200%;
+    height: 200%;
     background: #f9d4d1;
     border-radius: 500px;
 }
@@ -562,16 +599,17 @@ nav a{
 
 .uuu01 p{
     color: #777;
-    font-size: 25px;
+    font-size: 2vmin;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    letter-spacing: 30px;
+    letter-spacing: 1em;
+    text-indent: 1em;
     text-align: center;
     line-height: 80px;
 }
 
 .uuu02 p{
-    font-size: 20px;
+    font-size: 1.2vmin;
     position: absolute;
     top: 52%;
     left: 55%;
@@ -579,7 +617,7 @@ nav a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
-    line-height: 50px;
+    line-height: 4em;
     color: #585858;
     width: 75%;
 }
